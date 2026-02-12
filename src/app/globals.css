@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-mist text-ink antialiased;
+}
+
+a {
+  @apply underline-offset-4;
+}
+
+.prose-content h2 {
+  @apply text-xl font-semibold mt-8 mb-3;
+}
+
+.prose-content p {
+  @apply leading-7 mb-4;
+}
