@@ -1,0 +1,94 @@
+{
+  "assignment_name": "M2.2: Walkthrough - Configuring and Setting Up Your Data",
+  "total_points": 25,
+  "checks": [
+    {
+      "id": "connecting_and_cleaning_data",
+      "description": "Connected to Ideal data and cleaned setup (evidence of datasource + no obvious title/notes rows in workbook text)",
+      "type": "all_of",
+      "points": 5,
+      "checks": [
+        {
+          "type": "datasource_exists",
+          "datasource": "Ideal"
+        },
+        {
+          "type": "workbook_text_not_contains",
+          "contains": "title and notes"
+        }
+      ]
+    },
+    {
+      "id": "splitting_data",
+      "description": "Employee column split and renamed to Location and Employee ID",
+      "type": "all_of",
+      "points": 5,
+      "checks": [
+        {
+          "type": "field_exists",
+          "field": "Location"
+        },
+        {
+          "type": "field_exists",
+          "field": "Employee ID"
+        }
+      ]
+    },
+    {
+      "id": "relationships_and_joins",
+      "description": "Relationship between Ideal and Resolved Incidents configured on Employee",
+      "type": "all_of",
+      "points": 5,
+      "checks": [
+        {
+          "type": "workbook_text_contains",
+          "contains": "Resolved Incidents"
+        },
+        {
+          "type": "workbook_text_contains",
+          "contains": "Ideal"
+        },
+        {
+          "type": "workbook_text_contains",
+          "contains": "Employee"
+        }
+      ]
+    },
+    {
+      "id": "pivoting_data",
+      "description": "Pivot fields created and renamed to Incident Date and Resolved Incident Count",
+      "type": "all_of",
+      "points": 5,
+      "checks": [
+        {
+          "type": "field_exists",
+          "field": "Incident Date"
+        },
+        {
+          "type": "field_exists",
+          "field": "Resolved Incident Count"
+        }
+      ]
+    },
+    {
+      "id": "extracting_data",
+      "description": "Workbook contains extract metadata indicating extract creation",
+      "type": "any_of",
+      "points": 5,
+      "checks": [
+        {
+          "type": "workbook_text_contains",
+          "contains": "<extract"
+        },
+        {
+          "type": "workbook_text_contains",
+          "contains": "extract='true'"
+        },
+        {
+          "type": "workbook_text_contains",
+          "contains": "class='hyper'"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "assignment_name": "Tableau Walkthrough Example",
+  "total_points": 25,
+  "checks": [
+    {
+      "id": "step_1",
+      "description": "Worksheet named 'Sales by Category' exists",
+      "type": "worksheet_exists",
+      "worksheet": "Sales by Category",
+      "points": 5
+    },
+    {
+      "id": "step_2",
+      "description": "Worksheet named 'Profit Trend' exists",
+      "type": "worksheet_exists",
+      "worksheet": "Profit Trend",
+      "points": 5
+    },
+    {
+      "id": "step_3",
+      "description": "Dashboard named 'Executive Summary' exists",
+      "type": "dashboard_exists",
+      "dashboard": "Executive Summary",
+      "points": 5
+    },
+    {
+      "id": "step_4",
+      "description": "Calculated field contains IF SUM([Sales]) > 1000",
+      "type": "calculation_contains",
+      "contains": "IF SUM([Sales]) > 1000",
+      "points": 5
+    },
+    {
+      "id": "step_5",
+      "description": "Workbook contains 'Region Filter' text",
+      "type": "workbook_text_contains",
+      "contains": "Region Filter",
+      "points": 5
+    }
+  ]
+}
