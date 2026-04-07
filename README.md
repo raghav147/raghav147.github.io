@@ -74,3 +74,8 @@
   - As Student Ambassador helped organize and host open-day events and various leadership involvement on campus.
   - Actively participated as a Student Ambassador, Model United Nations Club Executive Board member at the Nepalese Student Association, Executive Board Member, and Food Committee chair at the International Student Organization
 
+
+## Tableau Assignment Grader
+
+A grading utility for checking Tableau packaged workbook submissions (`.twbx`) is available in `tableau-assignment-grader/`.
+See `tableau-assignment-grader/README.md` for setup and usage.
